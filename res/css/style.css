@@ -11,16 +11,11 @@ body {
 
 nav {
     display: flex;
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
     /*justify-content: space-between;*/
     /*align-items: center;*/
     position: fixed;
     min-width: 100%;
-}
-
-nav:hover {
-    background-color: #eeeeee;
-    box-shadow: 2px 2px 50px #eeeeee;
 }
 
 nav div {
@@ -66,7 +61,7 @@ nav div.search-container>button {
   }
   
   .dropdown {
-    float: right;
+    float: rigth;
     position: relative;
     display: inline-block;
   }
