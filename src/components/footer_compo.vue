@@ -1,12 +1,10 @@
 <template>
-  <div class="footer">
-    <footer>
+  <footer class="footer">
        &copy; 2021 by Awesome Posts Company (Hannes, Hannes, Henri)<br>
-     </footer>
      <p>
-       <router-link to="/contactus">Contact us</router-link>
+       <router-link to="/contactus"><b>Contact us</b></router-link>
      </p>
-  </div>
+  </footer>
 </template>
 
 <script>
@@ -17,6 +15,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
+.footer {
+  background-color: #cfddec;
+  text-align: center;
+  margin: 0px auto 0px auto;
+  padding: 20px;
+}
+
 h3 {
   margin: 40px 0 0;
 }
@@ -30,22 +36,26 @@ li {
 }
 /* unvisited link */
 a:link {
-  color: red;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-  color: white;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
   color: black;
+  text-decoration: underline;
 }
 
 /* selected link */
 a:active {
-  color: white;
+  color: rgb(154, 157, 197);
+  text-decoration: underline;
 }
 
 </style>
