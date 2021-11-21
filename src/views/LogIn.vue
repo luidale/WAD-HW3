@@ -19,7 +19,7 @@
 			</div>
 
 			<div class = textHolder>
-			<form action="index.html" method="post">
+			<form>
 				<input type="text" name="email" placeholder="Email"/><br>
 				<input type="password" name="password" placeholder="Password"/><br>
 				<div class="buttonHolder">
