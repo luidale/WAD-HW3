@@ -1,17 +1,16 @@
 <template>
   <div class="Posts">
     <h2>Our Posts page</h2>
-    <product_compo_2> </product_compo_2>
+    <posts_compo> </posts_compo>
   </div>
-  <!--<footer_compo></footer_compo>-->
 </template>
 
 <script>
-import product_compo_2 from "@/components/product_compo_2.vue";
+import posts_compo from "@/components/post_compo.vue";
 
 export default {
 name: "Posts",
- components: { product_compo_2 },
+ components: { posts_compo },
  data(){
  return{
  }
@@ -27,8 +26,6 @@ DecreasePrice() {
 
 }}
 
-
-//import footer_compo from "@/components/footer_compo.vue";
 </script>
 
 

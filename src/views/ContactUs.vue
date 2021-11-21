@@ -8,7 +8,7 @@
   </div>
 </template>
 <script>
-console.log("Loading contuct us page")
+console.log("Loading contact us page")
 </script>
 
 <style scoped>

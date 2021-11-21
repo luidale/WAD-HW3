@@ -30,7 +30,7 @@
 
 <script>
 export default {
-  name: "product_compo_2",
+  name: "posts_compo",
   data: function () {
     return {};
   },
@@ -154,30 +154,4 @@ a:active {
 }
 
 
-/* .item {
-  background: rgb(128, 183, 235);
-  margin-bottom: 5px;
-  padding: 3px 5px;
-}
-#comp-list-two {
-  background: #1862c9;
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
-  margin-bottom: 30px;
-  padding: 10px 20px;
-}
-#comp-list-two ul {
-  padding: 0;
-  list-style-type: none;
-}
-#comp-list-two li {
-  margin-right: 10px;
-  margin-top: 10px;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.7);
-}
-.price {
-  font-weight: bold;
-  color: #860ce8;
-  display: block;
-} */
 </style>
