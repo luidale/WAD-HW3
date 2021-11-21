@@ -22,7 +22,7 @@ export default {
   name: "App",
   components: {
     footercompo,
-    headercompo
+    headercompo,
   },
   mounted: function () {
     // Attach event listener to the root vue element

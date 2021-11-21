@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <nav>
-      <div>
+      <div class = "leftIcon">
         <img src="../../res/images/postit.png" alt="Notes">
       </div>
       <div class="search-container">
@@ -17,8 +17,8 @@
     <div id="nav">
       <router-link to="/login"> Log In </router-link> |
       <router-link to="/">Posts</router-link> |
-      <router-link to="/contactus">Contact Us</router-link>
-      
+      <router-link to="/contactus">Contact Us</router-link><br>
+      <button v-on:click="reRender()">Reset likes</button>
     </div>
     
   </div>
@@ -30,7 +30,7 @@ export default {
   methods: {    
     clickFunction() {
       document.getElementById("myDropdown").classList.toggle("show");
-    },
+    }, 
   }
 };
 
@@ -51,5 +51,12 @@ li {
 }
 a {
   color: #42b983;
+}
+
+.leftIcon img {
+  top: 10px; /* your required value */
+  height: 60px;
+  left: 10px;
+  position: fixed;
 }
 </style>
