@@ -14,7 +14,8 @@ name: "Products",
  components: { product_compo_2 },
  data(){
  return{
- }}
+ }
+ }
 
 }
 //import footer_compo from "@/components/footer_compo.vue";
