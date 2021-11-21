@@ -2,8 +2,6 @@
   <div class="Posts">
     <h2>Our Posts page</h2>
     <product_compo_2> </product_compo_2>
-     <button v-on:click="IncreasePrice"> Increase price </button>
- <button v-on:click="DecreasePrice"> Decrease price </button>
   </div>
   <!--<footer_compo></footer_compo>-->
 </template>

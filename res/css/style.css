@@ -6,7 +6,6 @@ html,
 body {
     margin: 0;
     padding: 0;
-    background-color: #63a1ce;
 }
 
 nav {
@@ -25,11 +24,9 @@ nav div {
     align-self: flex-start;
 }
 
-
 nav div img {
     height: 100%;
 }
-
 
 nav div.search-container>input {
     box-sizing: border-box;
@@ -53,38 +50,40 @@ nav div.search-container>button {
 }
 
 .dropbtn {
-
     border: none;
     cursor: pointer;
     height: 60px;
-    float:right;
-  }
-  
-  .dropdown {
-        position: relative;
+    float: right;
+}
+
+.dropdown {
+    position: relative;
     display: inline-block;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #ffffff;
     min-width: 160px;
     min-height: 70px;
     overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     right: 0;
-    top:90px;
+    top: 90px;
     z-index: 1;
-  }
-  
-  .dropdown-content a {
+}
+
+.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
-  .show {display: block;}
+}
+
+.show {
+    display: block;
+}
 
 .body-container {
     background-color: #ffffff;
@@ -126,7 +125,8 @@ div.main-begin {
     width: 100%;
 }
 
-.entry-text, .entry-title {
+.entry-text,
+.entry-title {
     margin-left: 10px;
 }
 
@@ -152,8 +152,8 @@ a:active {
 }
 
 div.login-container {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
     width: 400px;
     height: 450px;
     box-shadow: 2px 2px 15px #c5c5c5;
@@ -162,14 +162,16 @@ div.login-container {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -175px;     /* Half of height */
-    margin-left: -200px;     /* Half of width */
+    margin-top: -175px;
+    /* Half of height */
+    margin-left: -200px;
+    /* Half of width */
 }
 
-div:first-of-type + div.textHolder {
+div:first-of-type+div.textHolder {
     font-weight: bolder;
     font-size: 13pt;
-  }
+}
 
 .login-container a,
 a:visited,
@@ -178,14 +180,14 @@ a:active {
     text-decoration: none;
 }
 
-.icon-holder{
+.icon-holder {
     position: absolute;
-    text-align: left;  
-    float: left;  
+    text-align: left;
+    float: left;
     align-items: left;
 }
 
-.icon-holder img{
+.icon-holder img {
     height: 80px;
     padding: 10px;
     align-items: left;
@@ -193,38 +195,39 @@ a:active {
 
 a.forgotten-password {
     color: #1778bd;
-	font-size: 10pt;
+    font-size: 10pt;
     text-align: center;
     text-decoration: underline;
 }
 
 .login-container input {
-    padding:5px 15px;
-	margin-top: 5px;
+    padding: 5px 15px;
+    margin-top: 5px;
     margin-bottom: 5px;
 }
-.login-container input[type=submit] {
-    padding:5px 15px; 
-    background:#115a98; 
-	color: white;
 
+.login-container input[type=submit] {
+    padding: 5px 15px;
+    background: #115a98;
+    color: white;
 }
+
 .buttonHolder {
-	text-align: center;
+    text-align: center;
 }
+
 .textHolder {
-	text-align: center;
+    text-align: center;
     padding: 13px;
 }
 
-.textHolder a{
+.textHolder a {
     text-decoration: underline;
 }
 
-.textHolder ~ .textHolder2 {
+.textHolder~.textHolder2 {
     text-align: center;
     font-size: 13pt;
     font-weight: bolder;
     padding: 5px
 }
-
