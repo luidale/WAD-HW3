@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <nav>
-      <div>
+      <div class = "leftIcon">
         <img src="../../res/images/postit.png" alt="Notes">
       </div>
       <div class="search-container">
@@ -51,5 +51,12 @@ li {
 }
 a {
   color: #42b983;
+}
+
+.leftIcon img {
+  top: 10px; /* your required value */
+  height: 30px;
+  left: 10px;
+  position: fixed;
 }
 </style>
