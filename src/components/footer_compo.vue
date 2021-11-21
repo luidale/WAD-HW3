@@ -1,9 +1,11 @@
 <template>
   <div class="footer">
     <footer>
-       &copy; 2021 by Awesome Posts Company (Hannes, Hannes, Henri)
+       &copy; 2021 by Awesome Posts Company (Hannes, Hannes, Henri)<br>
      </footer>
-    <router-link to="/contactus">Contact Us</router-link>
+     <p>
+       <router-link to="/contactus">Contact us</router-link>
+     </p>
   </div>
 </template>
 
@@ -26,7 +28,24 @@ li {
   display: inline-block;
   margin: 0 10px;
 }
-a {
-  color: #42b983;
+/* unvisited link */
+a:link {
+  color: red;
 }
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
+
 </style>
