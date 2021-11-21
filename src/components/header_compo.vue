@@ -50,9 +50,6 @@ header {
 nav {
   display: flex;
   background-color: #ffffff;
-  /*justify-content: space-between;*/
-  /*align-items: center;*/
-  /* flex-direction: row; */
   min-width: 100%;
 }
 
@@ -61,12 +58,6 @@ nav:hover {
   box-shadow: 2px 2px 50px #eeeeee;
 }
 
-/*nav div {
-  height: 30px;
-  flex-grow: 1;
-  padding: 10px;
-  align-self: flex-start;
-}*/
 
 nav div img {
   height: 100%;
@@ -143,26 +134,4 @@ nav div.search-container > button {
     display: block;
   }
   .show {display: block;}
-
-/* h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-
-.leftIcon img {
-  top: 10px;
-  height: 60px;
-  left: 10px;
-  position: fixed;
-} */
 </style>

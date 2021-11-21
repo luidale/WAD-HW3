@@ -10,8 +10,6 @@
 
     </div>
 
-    <!-- Footer component 
-    <footercompo v-if="isNotInContactUs()"/> -->
     <footercompo />
   </div>
 </template>
@@ -30,19 +28,15 @@ export default {
   mounted: function () {
     // Attach event listener to the root vue element
     this.$el.addEventListener("click", this.onClick);
-    // Or if you want to affect everything
-    // document.addEventListener('click', this.onClick)
   },
   beforeDestroy: function () {
     this.$el.removeEventListener("click", this.onClick);
-    // document.removeEventListener('click', this.onClick)
   },
   methods: {
     isNotInContactUs() {
       return this.$router.history.current["path"] !== "/contactus";
     },
     onClick: function (ev) {
-      //console.log(ev.offsetX, ev.offsetY)
       if (!ev.target.matches(".dropbtn")) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
         var i;
@@ -91,35 +85,6 @@ section.entry {
 div.main-begin {
     margin-top: 80px;
 }
-
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 10px;
-  padding-top: 60px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-.header {
-  background-color: #ffffff;
-}
-.header:hover {
-  background-color: #eeeeee;
-  box-shadow: 2px 2px 50px #eeeeee;
-} */
 
 div.login-container {
 	display: flex;
