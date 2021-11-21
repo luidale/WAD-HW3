@@ -4,7 +4,11 @@
  <span class="author"> <b>Author:</b> {{post.authorName}} </span>
  <span class="book"> <b>Date:</b> {{post.createdAt}} </span> <br>
  <span class="goodreads"> </span>
- <span class="price"> ID:{{post.body}} </span> </p>
+ <span class="price"> ID:{{post.body}} </span>
+ <button v-on:click="post.likes++">I like this post</button><br>
+<span class="likes">Number of likes: {{post.likes}}</span><br>
+<button v-on:click="post.likes = 0">Reset likes</button>
+ </p>
 </div>
 </template>
 <script>
@@ -14,16 +18,19 @@ data: function() {
 return {
 }},
 computed: {
+
+    
 postList(){
 return this.$store.state.postList
-}}
+}
+},
+methods: {
+}
 }
 </script>
 
 
 <style scoped>
-
-</style>
 
 .item{
  background: rgb(128, 183, 235);
@@ -50,3 +57,4 @@ return this.$store.state.postList
  color: #860CE8;
  display: block;
 }
+</style>
