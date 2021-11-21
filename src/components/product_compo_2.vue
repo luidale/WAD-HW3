@@ -8,6 +8,9 @@
  <button v-on:click="post.likes++">I like this post</button><br>
 <span class="likes">Number of likes: {{post.likes}}</span><br>
 <button v-on:click="post.likes = 0">Reset likes</button>
+ <button v-on:click="IncreasePrice"> Increase price </button>
+ <button v-on:click="DecreasePrice"> Decrease price </button>
+ {{likes}}
  </p>
 </div>
 </template>
@@ -18,13 +21,22 @@ data: function() {
 return {
 }},
 computed: {
-
-    
 postList(){
 return this.$store.state.postList
+},
+postListsale(){
+return this.$store.getters.postListsale
 }
+
 },
 methods: {
+    
+  IncreasePrice: function() {
+ this.$store.dispatch("IncreasePriceAct")
+ },
+DecreasePrice() {
+ this.$store.dispatch("DecreasePriceAct")
+ }
 }
 }
 </script>

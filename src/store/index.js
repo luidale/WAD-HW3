@@ -102,11 +102,50 @@ export default new Vuex.Store({
   }
   ]
    },
-   getters: {}
-  ,
+   getters: {
+    postListsale: state =>{
+      var postListsale = state.postList.map(post => {
+      return{ authorName: post.authorName, 
+      createdAt: post.createdAt,
+      id: post.id,
+      title: post.id,
+      image: post.image,
+      likes: post.likes,
+      hashtags: post.hashTags,
+      body: post.body
 
-  mutations: {},
-  actions: {}
+      }
+      }
+      );
+     return postListsale
+     }
+   },
+
+  mutations: {
+      IncreasePrice (post) {
+        post.likes++
+      },
+      DecreasePrice: state => {
+      state.postList(post => {
+      post.likes--;
+      })
+      }
+  },
+  actions: {
+      IncreasePriceAct: act => {
+      setTimeout(function() {
+      act.commit("IncreasePrice")
+      }, 1000)
+      },
+      DecreasePriceAct: act => {
+      setTimeout(function() {
+      act.commit("DecreasePrice")
+      }, 1000)
+      }
+     
+
+
+  }
 ,
   modules: {},
 });
