@@ -2,13 +2,13 @@
   <div class="header">
     <nav>
       <div class = "leftIcon">
-        <img src="../../res/images/postit.png" alt="Notes">
+        <img src="@/assets/images/postit.png" alt="Notes">
       </div>
       <div class="search-container">
         <input type="text"><button>Search</button>
       </div>
       <div class="dropdown">
-        <img @click="clickFunction()" class="dropbtn" src ="../../res/images/me.png" alt="Me">
+        <img @click="clickFunction()" class="dropbtn" src ="@/assets/images/me.png" alt="Me">
         <div id="myDropdown" class="dropdown-content">
           <a>Dumb User<br>john.doe@example.com</a>
         </div>

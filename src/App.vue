@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-
     <!-- Header component -->
     <headercompo />
 
@@ -9,7 +8,7 @@
 
     <!-- Footer component 
     <footercompo v-if="isNotInContactUs()"/> -->
-    <footercompo/>
+    <footercompo />
   </div>
 </template>
 
@@ -26,34 +25,33 @@ export default {
   },
   mounted: function () {
     // Attach event listener to the root vue element
-    this.$el.addEventListener('click', this.onClick)
+    this.$el.addEventListener("click", this.onClick);
     // Or if you want to affect everything
     // document.addEventListener('click', this.onClick)
   },
   beforeDestroy: function () {
-    this.$el.removeEventListener('click', this.onClick)
+    this.$el.removeEventListener("click", this.onClick);
     // document.removeEventListener('click', this.onClick)
   },
   methods: {
     isNotInContactUs() {
       return this.$router.history.current["path"] !== "/contactus";
-    }, 
+    },
     onClick: function (ev) {
-    //console.log(ev.offsetX, ev.offsetY)
-      if (!ev.target.matches('.dropbtn')) {
+      //console.log(ev.offsetX, ev.offsetY)
+      if (!ev.target.matches(".dropbtn")) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
         var i;
         for (i = 0; i < dropdowns.length; i++) {
           var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
+          if (openDropdown.classList.contains("show")) {
+            openDropdown.classList.remove("show");
           }
         }
       }
-    }
-
+    },
   },
-}
+};
 </script>
 
 <style lang="scss">
@@ -83,7 +81,7 @@ export default {
   background-color: #ffffff;
 }
 .header:hover {
-    background-color: #eeeeee;
-    box-shadow: 2px 2px 50px #eeeeee;
+  background-color: #eeeeee;
+  box-shadow: 2px 2px 50px #eeeeee;
 }
 </style>
